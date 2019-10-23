@@ -8,7 +8,7 @@
           <b-list-group-item v-for="job in jobs" :key="job.company">
             <b-row class="mt-3">
               <b-col sm="2" md="2" lg="2">
-                <img :src="job.logo" />
+                <img :src="job.logo" >
               </b-col>
               <b-col sm="10" md="10" lg="10" class="pl-5">
                 <p class="lead">
@@ -16,10 +16,10 @@
                 </p>
                 <p>
                   <strong>{{ job.company }}</strong>
-                  <br />
+                  <br >
                   <em>{{ job.range }}</em>
-                  <br />
-                  <br />
+                  <br >
+                  <br >
                   {{ job.description }}
                 </p>
               </b-col>
