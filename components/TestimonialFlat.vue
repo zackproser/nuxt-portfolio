@@ -11,7 +11,7 @@
     <div class="testimonial-credits">
       <!-- Picture -->
       <div class="testimonial-picture">
-        <img :src="imgSrc" :alt="imgAlt" >
+        <img :src="imgSrc" :alt="imgAlt" />
       </div>
       <!-- /Picture -->
       <!-- Testimonial author information -->

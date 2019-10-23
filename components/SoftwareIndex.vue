@@ -28,28 +28,28 @@ const writings = [
     slug: 'html5-desktop-and-mobile-game-canyonrunner',
     description: 'Deep dive into my open sourced HTML5 game',
     body: CanyonRunner,
-    image: '/static/assets/img/canyonrunner-blog.png'
+    image: '~/assets/img/canyonrunner-blog.png'
   },
   {
     title: 'A powerful and open source content optimizer tool',
     slug: 'free-seo-article-optimizer',
     description: 'A full-stack app leveraging natural language processing',
     body: ArticleOptimizer,
-    image: '/static/assets/img/optimizer-blog.png'
+    image: '~/assets/img/optimizer-blog.png'
   },
   {
     title: 'A native OSX app for extracting data from websites',
     slug: 'pagegobber-mac-app',
     description: 'I built a Mac OSX app and sold it in the App Store',
     body: PageGobbler,
-    image: '/static/assets/img/gobbler-screens/pagegobbler-overview.png'
+    image: '~/assets/img/gobbler-screens/pagegobbler-overview.png'
   },
   {
     title: 'A loud and unique marketing site for the Pagegobbler OSX app',
     slug: 'pagegobbler-site',
     description: 'I built an express.js site to advertise my OSX app',
     body: PageGobblerSite,
-    image: '/static/assets/img/gobbler-site-screens/gobbler-blog.png'
+    image: '~/assets/img/gobbler-site-screens/gobbler-blog.png'
   },
   {
     title: 'A realtime global visualization of tweets on any given topic',
@@ -57,7 +57,7 @@ const writings = [
     description:
       'A configurable Twitter application that draws tweets in realtime on a world map',
     body: RealtimeHungerMap,
-    image: '/static/assets/img/twitter-map-screens/twitter-map-blog.png'
+    image: '~/assets/img/twitter-map-screens/twitter-map-blog.png'
   },
   {
     title:
@@ -66,28 +66,28 @@ const writings = [
     description:
       'Sign in via Twitter oAuth and paste the URL of a Twitter list to extract all usernames from',
     body: UsernameExtractor,
-    image: '/static/assets/img/extractor-screens/extractor-blog.png'
+    image: '~/assets/img/extractor-screens/extractor-blog.png'
   },
   {
     title: 'The first Node.js SDK for the WealthEngine API',
     slug: 'wealthengine-sdk-node',
     description: "I wrote WealthEngine's first Node.js SDK",
     body: WENodeSDK,
-    image: '/static/assets/img/wakka.png'
+    image: '~/assets/img/wakka.png'
   },
   {
     title: 'The first PHP SDK for the WealthEngine API',
     slug: 'wealthengine-sdk-php',
     description: "I wrote WealthEngine's first PHP SDK",
     body: WEPHPSDK,
-    image: '/static/assets/img/wokka.png'
+    image: '~/assets/img/wokka.png'
   },
   {
     title: 'The first Python SDK for the WealthEngine API',
     slug: 'wealthengine-python-sdk',
     description: "I wrote WealthEngine's first Python SDK",
     body: WEPythonSDK,
-    image: '/static/assets/img/wikka.png'
+    image: '~/assets/img/wikka.png'
   },
   {
     title: 'Padscoper Real estate search app',
@@ -95,7 +95,7 @@ const writings = [
     description:
       'A Node.js app that allows you to search for properties within 20 miles of a given address',
     body: Padscoper,
-    image: '/static/assets/img/padscoper-screens/padscoper-blog.png'
+    image: '~/assets/img/padscoper-screens/padscoper-blog.png'
   },
   {
     title: 'Wisdomseeker Wikipedia crawler',
@@ -103,7 +103,7 @@ const writings = [
     description:
       'All Wikipedia articles eventually link back to Philosophy if you follow the first link',
     body: Wisdomseeker,
-    image: '/static/assets/img/wisdomseeker-screens/wisdomseeker-blog.png'
+    image: '~/assets/img/wisdomseeker-screens/wisdomseeker-blog.png'
   },
   {
     title: 'Hashtag Blaster WordPress plugin',
@@ -111,7 +111,7 @@ const writings = [
     description:
       'The Twitter hashtag blaster allows you to add Tweet buttons to your posts preloaded with a given hashtag for your readers',
     body: Hashtagblaster,
-    image: '/static/assets/img/hashtag-blaster-screens/hashtag-blaster-blog.png'
+    image: '~/assets/img/hashtag-blaster-screens/hashtag-blaster-blog.png'
   },
   {
     title: 'Pageripper Go and React web app',
@@ -119,7 +119,7 @@ const writings = [
     description:
       'A very fast web scraping app that extracts links from a webpage and lets you download them in csv form',
     body: Pageripper,
-    image: '/static/assets/img/pageripper-screens/pageripper-blog.png'
+    image: '~/assets/img/pageripper-screens/pageripper-blog.png'
   },
   {
     title: 'Cf-terraforming is an official Cloudflare CLI',
@@ -127,7 +127,7 @@ const writings = [
     description:
       'Cf-terraforming allows you to download your Cloudflare resources into Terraform config files',
     body: CFTerraforming,
-    image: '/static/assets/img/blue.png'
+    image: '~/assets/img/blue.png'
   },
   {
     title: 'This very website',
@@ -135,7 +135,7 @@ const writings = [
     description:
       'I built my portfolio site to my exact specifications using Vue.js and VueBootstrap',
     body: VuePortfolioSite,
-    image: '/static/assets/img/portfolio-screens/zackproser-com-blog.png'
+    image: '~/assets/img/portfolio-screens/zackproser-com-blog.png'
   }
 ]
 

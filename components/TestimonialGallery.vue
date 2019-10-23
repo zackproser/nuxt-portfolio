@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import testimonials from '../../data/testimonials.json'
+import testimonials from '../data/testimonials.json'
 
 export default {
   name: 'TestimonialsGallery',

@@ -1,55 +1,145 @@
 <template>
-  <div>
-    <nuxt />
+  <div id="app">
+    <b-container fluid>
+      <b-row>
+        <b-col xs="12" sm="12" md="2" lg="2" xl="2" class="sidebar">
+          <b-row class="h-100">
+            <div class="mx-auto nameplate text-center">
+              <p class="lead">
+                Zack Proser
+              </p>
+              <p class="professional-title">
+                Software Engineer
+              </p>
+              <div id="bubbles">
+                <div class="bubble x1" />
+                <div class="bubble x2" />
+                <div class="bubble x3" />
+                <div class="bubble x4" />
+                <div class="bubble x5" />
+                <div class="bubble x6" />
+                <div class="bubble x7" />
+                <div class="bubble x8" />
+                <div class="bubble x9" />
+                <div class="bubble x10" />
+                <div class="bubble x11" />
+                <div class="bubble x12" />
+                <div class="bubble x13" />
+                <div class="bubble x14" />
+                <div class="bubble x15" />
+                <div class="bubble x16" />
+              </div>
+              <img src="~/assets/img/beaker.png" />
+            </div>
+          </b-row>
+        </b-col>
+        <b-col xs="12" sm="12" md="10" lg="10" xl="10">
+          <transition name="fade">
+            <router-view />
+          </transition>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
+<script>
+export default {
+  name: 'App',
+  created() {
+    document.title = "Zack Proser's software and art"
+  }
+}
+</script>
+
 <style>
+body,
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+a,
+li a,
+h1,
+h2,
+h3,
+h4,
+p > strong > em {
+  color: #00bf8f !important;
+}
+
+a.btn {
+  color: #fff !important;
+}
+
+#app {
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+.sidebar {
+  background: #00bf8f;
+}
+
+.nameplate {
+  margin-top: 90%;
+}
+
+.nameplate p {
+  font-size: 3em;
+  color: #fff;
+}
+
+.post-title {
+  color: #00bf8f;
+}
+
+.post-date {
+  color: grey;
+}
+
+.post-view__content {
+  max-width: 800px;
+}
+
+.post-view__content p,
+li {
+  font-size: 20px;
+}
+
+.post-view__content img {
+  max-width: 100%;
+}
+
+.post-view_content p {
+  color: #green;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-property: opacity;
+  transition-duration: 0.45s;
+}
+
+.fade-enter-active {
+  transition-delay: 0.45s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+p.professional-title {
+  font-size: 26px;
+}
+
+.testimonial-firm {
+  color: #00bf8f;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5em;
   margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #15755f;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+  text-transform: uppercase;
 }
 </style>

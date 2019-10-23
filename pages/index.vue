@@ -36,7 +36,7 @@
       </b-row>
     </b-container>
 
-    <company-row
+    <!-- <company-row
       :images="[
         {
           src: 'https://picsum.photos/900/250/?image=3',
@@ -69,12 +69,12 @@
       ]"
       title="Companies I've worked with"
       :tiled="false"
-    />
+    /> -->
 
     <image-row
       :images="[
         {
-          src: '/static/assets/img/writings/catfacts-prank.png',
+          src: '~/assets/img/writings/catfacts-prank.png',
           alt: 'Catfacts Prank',
           link:
             'https://medium.com/@zackproser/building-a-catfacts-pranking-service-in-golang-5b51e8721fe2?source=friends_link&sk=8b97968fa6fdbf51cbb0bd3b5983c674',
@@ -85,7 +85,7 @@
           relative: false
         },
         {
-          src: '/static/assets/img/writings/cf-terraforming.png',
+          src: '~/assets/img/writings/cf-terraforming.png',
           alt: 'Cf-terraforming utility',
           link: 'https://blog.cloudflare.com/introducing-cf-terraform/',
           title: 'Cloudflare Blog: Introducing cf-terraform',
@@ -95,7 +95,7 @@
           relative: false
         },
         {
-          src: '/static/assets/img/writings/dogfooding-workers.png',
+          src: '~/assets/img/writings/dogfooding-workers.png',
           alt: 'Dogfooding Cloudflare workers',
           link: 'https://blog.cloudflare.com/dogfooding-edge-workers/',
           title: 'Cloudflare Blog: Dogfooding Workers',
@@ -112,7 +112,7 @@
     <image-row
       :images="[
         {
-          src: '/static/assets/img/optimizer-blog.png',
+          src: '~/assets/img/optimizer-blog.png',
           alt: 'Article Optimizer',
           link: '/software/free-seo-article-optimizer',
           title: 'Article Optimizer App',
@@ -121,7 +121,7 @@
           relative: true
         },
         {
-          src: '/static/assets/img/canyonrunner-blog.png',
+          src: '~/assets/img/canyonrunner-blog.png',
           alt: 'CanyonRunner HTML5 Game',
           link: '/software/html5-desktop-and-mobile-game-canyonrunner',
           title: 'CanyonRunner HTML5 Game',
@@ -130,7 +130,7 @@
           relative: true
         },
         {
-          src: '/static/assets/img/pageripper-screens/pageripper-blog.png',
+          src: '~/assets/img/pageripper-screens/pageripper-blog.png',
           alt: 'Pageripper Golang and React app',
           link: '/software/pageripper',
           title: 'Pageripper',
@@ -148,7 +148,6 @@
 <script>
 import NavLinks from '~/components/Nav.vue'
 import ImageRow from '~/components/ImageRow.vue'
-import CompanyRow from '~/components/CompanyRow.vue'
 import TestimonialsCarousel from '~/components/Testimonials.vue'
 
 export default {
@@ -156,7 +155,6 @@ export default {
   components: {
     NavLinks,
     ImageRow,
-    CompanyRow,
     TestimonialsCarousel
   }
 }

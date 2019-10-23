@@ -20,9 +20,13 @@
 
 <script>
 import testimonials from '../data/testimonials.json'
+import TestimonialItem from '~/components/TestimonialItem'
 
 export default {
   name: 'TestimonialsCarousel',
+  components: {
+    TestimonialItem
+  },
   data() {
     return {
       slide: 0,

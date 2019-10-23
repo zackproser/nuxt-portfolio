@@ -23,7 +23,7 @@ const writings = [
     description:
       "How to create test-driven web services that won't build when broken",
     body: DockerizedExpress,
-    image: '/static/assets/img/wakka.png'
+    image: '~/assets/img/wakka.png'
   },
   {
     title: 'Stretching your infrastructure with Forge and Cloudflare',
@@ -33,7 +33,7 @@ const writings = [
     description:
       'How I once ran 7 node.js and PHP apps, serving over 300,000 requests per month, for $35 with Laravel Forge, DigitalOcean and Cloudflare',
     body: ModernDeployment,
-    image: '/static/assets/img/wokka.png'
+    image: '~/assets/img/wokka.png'
   },
   {
     title: 'Docker command-line tips and tricks',
@@ -41,7 +41,7 @@ const writings = [
     slug: 'docker-command-line-tips-and-tricks',
     description: 'Handy tips for working with Docker',
     body: DockerTips,
-    image: '/static/assets/img/wikka.png'
+    image: '~/assets/img/wikka.png'
   },
   {
     title: 'I built a Twitter AI framework that runs accounts of any identity',
@@ -50,7 +50,7 @@ const writings = [
     description:
       'Goodneighbor runs Twitter accounts on any subject 100% autonomously, better than a human can',
     body: Goodneighbor,
-    image: '/static/assets/img/goodneighbor-screens/goodneighbor-blog.png'
+    image: '~/assets/img/goodneighbor-screens/goodneighbor-blog.png'
   },
   {
     title: 'I open sourced my content analysis tool',
@@ -59,7 +59,7 @@ const writings = [
     description:
       'Article Optimizer is a full stack PHP app that leverages natural language processing to help you optimize your web content',
     body: ArticleOptimizer,
-    image: '/static/assets/img/optimizer-blog.png'
+    image: '~/assets/img/optimizer-blog.png'
   },
   {
     title: 'I open sourced my Phaser HTML5 game',
@@ -68,7 +68,7 @@ const writings = [
     description:
       'Learn how to build a complete game including common subsystems',
     body: CanyonRunner,
-    image: '/static/assets/img/canyonrunner-blog.png'
+    image: '~/assets/img/canyonrunner-blog.png'
   },
   {
     title: 'I built the cat facts prank into an express.js service with Twilio',
@@ -76,7 +76,7 @@ const writings = [
     slug: 'catfacts-attack-service',
     description: 'Prank your friends with the cat facts service from hell',
     body: Catfacts,
-    image: '/static/assets/img/catfacts-screens/catfacts-blog.png'
+    image: '~/assets/img/catfacts-screens/catfacts-blog.png'
   },
   {
     title: 'Speakeasy: Golang Twilio client',
@@ -85,7 +85,7 @@ const writings = [
     description:
       'Speakeasy is a Golang client for sending SMS and making calls via Twilio',
     body: Speakeasy,
-    image: '/static/assets/img/speakeasy-screens/speakeasy-blog.png'
+    image: '~/assets/img/speakeasy-screens/speakeasy-blog.png'
   }
 ]
 
