@@ -13,7 +13,7 @@
       :name="testimonial.name"
       :title="testimonial.title"
       :quote="testimonial.quote"
-      :img-src="testimonial.imgSrc"
+      :image="testimonial.image"
     />
   </b-carousel>
 </template>
@@ -28,6 +28,7 @@ export default {
     TestimonialItem
   },
   data() {
+    console.log(testimonials)
     return {
       slide: 0,
       sliding: null,
