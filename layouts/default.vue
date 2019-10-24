@@ -65,7 +65,7 @@ h2,
 h3,
 h4,
 p > strong > em {
-  color: #00bf8f !important;
+  color: #005ebf !important;
 }
 
 a.btn {
@@ -78,7 +78,8 @@ a.btn {
 }
 
 .sidebar {
-  background: #00bf8f;
+  /*background: #00bf8f;*/
+  background: #005ebf;
 }
 
 .nameplate {
@@ -91,7 +92,7 @@ a.btn {
 }
 
 .post-title {
-  color: #00bf8f;
+  color: #005ebf;
 }
 
 .post-date {

@@ -2,8 +2,21 @@
   <b-container>
     <b-row>
       <b-col>
-        <div :class="['logo', selected ? 'logo--absolute': '', ready ? 'logo--active' : '']" @click="closePost()" />
-        <div :class="['post-view', selected ? 'post-view--active' : '' , ready ? 'post-view--ready' : '' ]">
+        <div
+          :class="[
+            'logo',
+            selected ? 'logo--absolute' : '',
+            ready ? 'logo--active' : ''
+          ]"
+          @click="closePost()"
+        />
+        <div
+          :class="[
+            'post-view',
+            selected ? 'post-view--active' : '',
+            ready ? 'post-view--ready' : ''
+          ]"
+        >
           <div
             v-if="selected"
             class="post-view__container"
@@ -12,23 +25,36 @@
             md="10"
             lg="10"
             xl="10"
-            <h2 class="post-title"
           >
-            {{ currentPost.title }}
-            </h2>
+            <h2 class="post-title">{{ currentPost.title }}</h2>
             <h4 class="post-date">
               {{ currentPost.date }}
             </h4>
-            <div v-highlight xs="12" sm="12" md="10" lg="10" xl="10" class="post-view__content" v-html="parsedPostBody" />
+            <div
+              v-highlight
+              xs="12"
+              sm="12"
+              md="10"
+              lg="10"
+              xl="10"
+              class="post-view__content"
+              v-html="parsedPostBody"
+            />
           </div>
         </div>
-        <div xs="12" sm="12" md="2" lg="2" :class="['post-list', selected ? 'post-list--hide' : '']">
+        <div
+          xs="12"
+          sm="12"
+          md="2"
+          lg="2"
+          :class="['post-list', selected ? 'post-list--hide' : '']"
+        >
           <b-card-group v-for="i in Math.ceil(posts.length / 3)" :key="i">
             <b-card
               v-for="post in posts.slice((i - 1) * 3, i * 3)"
               :key="post.slug"
               :title="post.title"
-              :img-src="post.image"
+              :img-src="require(`@/assets${post.image}`)"
               class="post my-3"
               img-top
               @click="changePost(post.slug)"
@@ -57,7 +83,7 @@ export default {
     slug: String,
     posts: Array
   },
-  data () {
+  data() {
     return {
       currentPost: null,
       selected: false,
@@ -66,7 +92,7 @@ export default {
     }
   },
   computed: {
-    parsedPostBody () {
+    parsedPostBody() {
       marked.setOptions({
         renderer: new marked.Renderer(),
         gfm: true,
@@ -81,14 +107,14 @@ export default {
     }
   },
   watch: {
-    '$route' (to, from) {
+    $route(to) {
       // Watch for and handle the case where someone clicks back to exhibit index via nav
       if (!to.params.slug) {
         this.selected = false
       }
     }
   },
-  mounted () {
+  mounted() {
     this.selected = false
     if (this.slug) {
       this.changePost(this.slug)
@@ -96,31 +122,34 @@ export default {
       this.selected = false
     }
   },
-  created () {
-    window.addEventListener('keydown', e => {
+  created() {
+    window.addEventListener('keydown', (e) => {
       e.keyCode === 39 ? this.nextPost() : false
       e.keyCode === 37 ? this.prevPost() : false
       e.keyCode === 27 ? this.closePost() : false
     })
   },
   methods: {
-    getPost (slug) {
-      return (this.posts.filter(post => post.slug === slug).pop() || this.posts.shift())
+    getPost(slug) {
+      return (
+        this.posts.filter((post) => post.slug === slug).pop() ||
+        this.posts.shift()
+      )
     },
-    changePost (slug) {
+    changePost(slug) {
       this.currentPost = this.getPost(slug)
-      this.$router.push({name: this.prefix, params: { slug }})
+      this.$router.push({ name: this.prefix, params: { slug } })
       this.selected = true
       this.ready = true
       window.scrollTo(0, 0)
     },
-    closePost () {
+    closePost() {
       if (this.lastSelectedPost !== null) {
         this.selected = false
         this.ready = false
       }
     },
-    nextPost () {
+    nextPost() {
       if (this.lastSelectedPost < this.posts.length - 1) {
         this.lastSelectedPost++
         this.ready = false
@@ -131,7 +160,7 @@ export default {
         }, 600)
       }
     },
-    prevPost () {
+    prevPost() {
       if (
         this.lastSelectedPost <= this.posts.length - 1 &&
         this.lastSelectedPost !== 0

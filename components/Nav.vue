@@ -12,9 +12,9 @@
         </router-link>
       </b-nav-item>
       <b-nav-item>
-        <router-link to="/shop">
+        <nuxt-link to="/shop">
           Art Store
-        </router-link>
+        </nuxt-link>
       </b-nav-item>
       <b-nav-item>
         <router-link to="/github">

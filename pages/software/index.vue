@@ -6,8 +6,10 @@
 </template>
 
 <script>
-import CanyonRunner from 'html-loader!~/assets/articles/software/html5-canyonrunner.html'
+import NavLinks from '~/components/Nav.vue'
+import Exhibit from '~/components/Exhibit.vue'
 
+import CanyonRunner from 'html-loader!~/assets/articles/software/html5-canyonrunner.html'
 
 const writings = [
   {
@@ -21,6 +23,10 @@ const writings = [
 
 export default {
   name: 'Software',
+  components: {
+    NavLinks,
+    Exhibit
+  },
   props: ['slug'],
   data() {
     return {
