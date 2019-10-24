@@ -74,7 +74,7 @@
     <image-row
       :images="[
         {
-          src: '~/assets/img/writings/catfacts-prank.png',
+          src: '/img/writings/catfacts-prank.png',
           alt: 'Catfacts Prank',
           link:
             'https://medium.com/@zackproser/building-a-catfacts-pranking-service-in-golang-5b51e8721fe2?source=friends_link&sk=8b97968fa6fdbf51cbb0bd3b5983c674',
@@ -85,7 +85,7 @@
           relative: false
         },
         {
-          src: '~/assets/img/writings/cf-terraforming.png',
+          src: '/img/writings/cf-terraforming.png',
           alt: 'Cf-terraforming utility',
           link: 'https://blog.cloudflare.com/introducing-cf-terraform/',
           title: 'Cloudflare Blog: Introducing cf-terraform',
@@ -95,7 +95,7 @@
           relative: false
         },
         {
-          src: '~/assets/img/writings/dogfooding-workers.png',
+          src: '/img/writings/dogfooding-workers.png',
           alt: 'Dogfooding Cloudflare workers',
           link: 'https://blog.cloudflare.com/dogfooding-edge-workers/',
           title: 'Cloudflare Blog: Dogfooding Workers',
@@ -112,7 +112,7 @@
     <image-row
       :images="[
         {
-          src: '~/assets/img/optimizer-blog.png',
+          src: '/img/optimizer-blog.png',
           alt: 'Article Optimizer',
           link: '/software/free-seo-article-optimizer',
           title: 'Article Optimizer App',
@@ -121,7 +121,7 @@
           relative: true
         },
         {
-          src: '~/assets/img/canyonrunner-blog.png',
+          src: '/img/canyonrunner-blog.png',
           alt: 'CanyonRunner HTML5 Game',
           link: '/software/html5-desktop-and-mobile-game-canyonrunner',
           title: 'CanyonRunner HTML5 Game',
@@ -130,7 +130,7 @@
           relative: true
         },
         {
-          src: '~/assets/img/pageripper-screens/pageripper-blog.png',
+          src: '/img/pageripper-screens/pageripper-blog.png',
           alt: 'Pageripper Golang and React app',
           link: '/software/pageripper',
           title: 'Pageripper',

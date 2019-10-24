@@ -74,7 +74,7 @@
     <image-row
       :images="[
         {
-          src: '~/assets/img/writings/catfacts-prank.png',
+          src: '/img/writings/catfacts-prank.png',
           alt: 'Catfacts Prank',
           link:
             'https://medium.com/@zackproser/building-a-catfacts-pranking-service-in-golang-5b51e8721fe2?source=friends_link&sk=8b97968fa6fdbf51cbb0bd3b5983c674',

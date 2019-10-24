@@ -28,7 +28,6 @@ export default {
     TestimonialItem
   },
   data() {
-    console.log(testimonials)
     return {
       slide: 0,
       sliding: null,
