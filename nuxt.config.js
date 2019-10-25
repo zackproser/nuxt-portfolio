@@ -58,5 +58,40 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+
+  router: {
+    linkActiveClass: 'active',
+    extendRoutes (routes, resolve) {
+      routes.push({
+        path: '/artwork',
+        beforeEnter () {
+          location.href = 'https://instagram.com/zackproser'
+        }
+      }, {
+        path: '/shop',
+        beforeEnter () {
+          location.href = 'https://art.zackproser.com'
+        }
+      },
+      {
+        path: '/github',
+        beforeEnter () {
+          location.href = 'https://github.com/zackproser'
+        }
+      },
+      {
+        path: '/resume',
+        beforeEnter () {
+          location.href = 'https://www.linkedin.com/in/zackproser'
+        }
+      },
+      {
+        path: '/codepen',
+        beforeEnter () {
+          location.href = 'https://codepen.io/zackproser'
+        }
+      })
+    }
   }
 }

@@ -23,7 +23,7 @@
 
           <b-button
             :href="image.link"
-            variant="success"
+            variant="primary"
             size="lg"
             class="mt-auto"
           >

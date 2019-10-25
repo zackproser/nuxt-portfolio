@@ -11,7 +11,7 @@
     <div class="testimonial-credits">
       <!-- Picture -->
       <div class="testimonial-picture">
-        <img :src="imgSrc" :alt="imgAlt" />
+        <img :src="require(`@/assets/img/testimonials/${image}`)" />
       </div>
       <!-- /Picture -->
       <!-- Testimonial author information -->
@@ -31,7 +31,7 @@
 <script>
 export default {
   name: 'TestimonialItem',
-  props: ['imgSrc', 'imgAlt', 'quote', 'name', 'title']
+  props: ['image', 'imgAlt', 'quote', 'name', 'title']
 }
 </script>
 

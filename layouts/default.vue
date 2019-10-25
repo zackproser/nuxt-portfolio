@@ -83,7 +83,13 @@ a.btn {
 }
 
 .nameplate {
-  margin-top: 50%;
+  margin-top: 90%;
+}
+
+@media (max-width: 576px) {
+  .nameplate {
+    margin-top: 50% !important;
+  }
 }
 
 .nameplate p {
@@ -136,7 +142,7 @@ p.professional-title {
 }
 
 .testimonial-firm {
-  color: #00bf8f;
+  color: #0d81af;
   font-size: 14px;
   font-weight: 800;
   line-height: 1.5em;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-links />
+    <nav-links></nav-links>
     <b-container>
       <testimonial-flat
         v-for="testimonial in testimonials"
@@ -8,17 +8,25 @@
         :name="testimonial.name"
         :title="testimonial.title"
         :quote="testimonial.quote"
-        :img-src="testimonial.image"
-      />
+        :image="testimonial.image"
+      >
+      </testimonial-flat>
     </b-container>
   </div>
 </template>
 
 <script>
-import testimonials from '../data/testimonials.json'
+import testimonials from '../../data/testimonials.json'
+
+import NavLinks from '~/components/Nav.vue'
+import TestimonialFlat from '~/components/TestimonialFlat'
 
 export default {
-  name: 'TestimonialsGallery',
+  name: 'testimonials-gallery',
+  components: {
+    NavLinks,
+    TestimonialFlat
+  },
   data() {
     return {
       testimonials

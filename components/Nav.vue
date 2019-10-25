@@ -2,14 +2,14 @@
   <b-container>
     <b-nav class="my-5">
       <b-nav-item>
-        <router-link to="/" exact>
+        <nuxt-link to="/" exact>
           About
-        </router-link>
+        </nuxt-link>
       </b-nav-item>
       <b-nav-item>
-        <router-link to="/artwork">
+        <nuxt-link to="/artwork">
           Artwork
-        </router-link>
+        </nuxt-link>
       </b-nav-item>
       <b-nav-item>
         <nuxt-link to="/shop">
@@ -17,29 +17,29 @@
         </nuxt-link>
       </b-nav-item>
       <b-nav-item>
-        <router-link to="/github">
+        <nuxt-link to="/github">
           GitHub
-        </router-link>
+        </nuxt-link>
       </b-nav-item>
       <b-nav-item>
-        <router-link to="/resume">
+        <nuxt-link to="/resume">
           Resume
-        </router-link>
+        </nuxt-link>
       </b-nav-item>
       <b-nav-item>
-        <router-link to="/software">
+        <nuxt-link to="/software">
           Software
-        </router-link>
+        </nuxt-link>
       </b-nav-item>
       <b-nav-item>
-        <router-link to="/blog">
+        <nuxt-link to="/blog">
           Blog
-        </router-link>
+        </nuxt-link>
       </b-nav-item>
       <b-nav-item>
-        <router-link to="/codepen">
+        <nuxt-link to="/codepen">
           Codepen.io
-        </router-link>
+        </nuxt-link>
       </b-nav-item>
     </b-nav>
   </b-container>
