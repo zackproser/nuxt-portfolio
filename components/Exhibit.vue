@@ -26,12 +26,15 @@
             lg="10"
             xl="10"
           >
-            <h2 class="post-title">{{ currentPost.title }}</h2>
+            <h2 class="post-title">
+              {{ currentPost.title }}
+            </h2>
+
             <h4 class="post-date">
               {{ currentPost.date }}
             </h4>
+
             <div
-              v-highlight
               xs="12"
               sm="12"
               md="10"
@@ -39,7 +42,7 @@
               xl="10"
               class="post-view__content"
               v-html="parsedPostBody"
-            />
+            ></div>
           </div>
         </div>
         <div

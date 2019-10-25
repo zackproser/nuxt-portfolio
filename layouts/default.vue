@@ -83,7 +83,7 @@ a.btn {
 }
 
 .nameplate {
-  margin-top: 90%;
+  margin-top: 50%;
 }
 
 .nameplate p {

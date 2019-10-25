@@ -130,7 +130,7 @@
           relative: true
         },
         {
-          src: '/img/pageripper-screens/pageripper-blog.png',
+          src: '/img/pageripper-blog.png',
           alt: 'Pageripper Golang and React app',
           link: '/software/pageripper',
           title: 'Pageripper',
