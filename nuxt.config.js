@@ -1,4 +1,26 @@
+const path = require('path')
+const glob = require('glob')
+
+var dynamicRoutes = getDynamicPaths({
+  '/posts': 'posts/*.md'
+})
+
+function getDynamicPaths(urlFilepathTable) {
+  return [].concat(
+    ...Object.keys(urlFilepathTable).map(url => {
+      var filepathGlob = urlFilepathTable[url]
+      return glob
+        .sync(filepathGlob, { cwd: 'posts' })
+        .map(filepath => `${url}/${path.basename(filepath, '.md')}`)
+    })
+  )
+}
+
 export default {
+  generate: {
+    routes: dynamicRoutes
+  },
+
   mode: 'spa',
   /*
    ** Headers of the page
@@ -57,7 +79,15 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+      config.module.rules.push(
+        {
+          test: /\.md$/,
+          include: path.resolve(__dirname, "posts"),
+          loader: "frontmatter-markdown-loader",
+        }
+      )
+    }
   },
 
   router: {
@@ -95,3 +125,4 @@ export default {
     }
   }
 }
+
