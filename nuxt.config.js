@@ -1,12 +1,9 @@
+const glob = require('glob')
 const path = require('path')
 
 let dynamicRoutes = () => {
-  return new Promise(resolve => {
-    return resolve([
-      '/software/article-optimizer',
-      '/software/catfacts'
-    ])
-  })
+  return glob.sync('*.md', { cwd: 'posts' })
+  .map(filepath => `/software/${path.basename(filepath, '.md')}`)
 }
 
 export default {
