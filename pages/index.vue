@@ -74,7 +74,7 @@
     <image-row
       :images="[
         {
-          src: '/img/writings/catfacts-prank.png',
+          src: 'catfacts-prank.png',
           alt: 'Catfacts Prank',
           link:
             'https://medium.com/@zackproser/building-a-catfacts-pranking-service-in-golang-5b51e8721fe2?source=friends_link&sk=8b97968fa6fdbf51cbb0bd3b5983c674',
@@ -85,7 +85,7 @@
           relative: false
         },
         {
-          src: '/img/writings/cf-terraforming.png',
+          src: 'cf-terraforming.png',
           alt: 'Cf-terraforming utility',
           link: 'https://blog.cloudflare.com/introducing-cf-terraform/',
           title: 'Cloudflare Blog: Introducing cf-terraform',
@@ -95,7 +95,7 @@
           relative: false
         },
         {
-          src: '/img/writings/dogfooding-workers.png',
+          src: 'dogfooding-workers.png',
           alt: 'Dogfooding Cloudflare workers',
           link: 'https://blog.cloudflare.com/dogfooding-edge-workers/',
           title: 'Cloudflare Blog: Dogfooding Workers',
@@ -112,25 +112,25 @@
     <image-row
       :images="[
         {
-          src: '/img/optimizer-blog.png',
+          src: 'optimizer-blog.png',
           alt: 'Article Optimizer',
-          link: '/software/free-seo-article-optimizer',
+          link: '/software/article-optimizer',
           title: 'Article Optimizer App',
           description:
             'A powerful full stack application that leverages natural language processing to suggest content improvements',
           relative: true
         },
         {
-          src: '/img/canyonrunner-blog.png',
+          src: 'canyonrunner-blog.png',
           alt: 'CanyonRunner HTML5 Game',
-          link: '/software/html5-desktop-and-mobile-game-canyonrunner',
+          link: '/software/html5-canyonrunner',
           title: 'CanyonRunner HTML5 Game',
           description:
             'A complete HTML5 game complete with multiple subsystems: saves, multiple levels, aerial combat, multiple ending',
           relative: true
         },
         {
-          src: '/img/pageripper-blog.png',
+          src: 'pageripper-blog.png',
           alt: 'Pageripper Golang and React app',
           link: '/software/pageripper',
           title: 'Pageripper',

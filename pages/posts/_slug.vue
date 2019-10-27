@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="post-title">
-      <h1></h1>
+      <h1>WAKKA</h1>
     </div>
     <div class="content" v-html="post.html"></div>
   </div>

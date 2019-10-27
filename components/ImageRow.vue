@@ -12,7 +12,7 @@
           v-for="image in images"
           :key="image.src"
           :title="image.title"
-          :img-src="require(`@/assets${image.src}`)"
+          :img-src="image.src"
           class="post my-3"
           body-class=" d-flex flex-column"
           img-top

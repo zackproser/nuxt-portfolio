@@ -7,11 +7,11 @@ var dynamicRoutes = getDynamicPaths({
 
 function getDynamicPaths(urlFilepathTable) {
   return [].concat(
-    ...Object.keys(urlFilepathTable).map(url => {
+    ...Object.keys(urlFilepathTable).map((url) => {
       var filepathGlob = urlFilepathTable[url]
       return glob
         .sync(filepathGlob, { cwd: 'posts' })
-        .map(filepath => `${url}/${path.basename(filepath, '.md')}`)
+        .map((filepath) => `${url}/${path.basename(filepath, '.md')}`)
     })
   )
 }
@@ -80,49 +80,49 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-      config.module.rules.push(
-        {
-          test: /\.md$/,
-          include: path.resolve(__dirname, "posts"),
-          loader: "frontmatter-markdown-loader",
-        }
-      )
+      config.module.rules.push({
+        test: /\.md$/,
+        include: path.resolve(__dirname, 'posts'),
+        loader: 'frontmatter-markdown-loader'
+      })
     }
   },
 
   router: {
     linkActiveClass: 'active',
-    extendRoutes (routes, resolve) {
-      routes.push({
-        path: '/artwork',
-        beforeEnter () {
-          location.href = 'https://instagram.com/zackproser'
+    extendRoutes(routes, resolve) {
+      routes.push(
+        {
+          path: '/artwork',
+          beforeEnter() {
+            location.href = 'https://instagram.com/zackproser'
+          }
+        },
+        {
+          path: '/shop',
+          beforeEnter() {
+            location.href = 'https://art.zackproser.com'
+          }
+        },
+        {
+          path: '/github',
+          beforeEnter() {
+            location.href = 'https://github.com/zackproser'
+          }
+        },
+        {
+          path: '/resume',
+          beforeEnter() {
+            location.href = 'https://www.linkedin.com/in/zackproser'
+          }
+        },
+        {
+          path: '/codepen',
+          beforeEnter() {
+            location.href = 'https://codepen.io/zackproser'
+          }
         }
-      }, {
-        path: '/shop',
-        beforeEnter () {
-          location.href = 'https://art.zackproser.com'
-        }
-      },
-      {
-        path: '/github',
-        beforeEnter () {
-          location.href = 'https://github.com/zackproser'
-        }
-      },
-      {
-        path: '/resume',
-        beforeEnter () {
-          location.href = 'https://www.linkedin.com/in/zackproser'
-        }
-      },
-      {
-        path: '/codepen',
-        beforeEnter () {
-          location.href = 'https://codepen.io/zackproser'
-        }
-      })
+      )
     }
   }
 }
-

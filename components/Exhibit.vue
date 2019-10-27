@@ -27,13 +27,12 @@
             xl="10"
           >
             <h2 class="post-title">
-              {{ currentPost.title }}
+              {{ currentPost.attributes.title }}
             </h2>
 
             <h4 class="post-date">
-              {{ currentPost.date }}
+              {{ currentPost.attributes.date }}
             </h4>
-
             <div
               xs="12"
               sm="12"
@@ -56,17 +55,20 @@
             <b-card
               v-for="post in posts.slice((i - 1) * 3, i * 3)"
               :key="post.slug"
-              :title="post.title"
-              :img-src="require(`@/assets${post.image}`)"
+              :title="post.attributes.title"
               class="post my-3"
+              :img-src="`/${post.attributes.image}`"
               img-top
               @click="changePost(post.slug)"
             >
               <p class="card-text">
-                {{ post.description }}
+                {{ post.attributes.description }}
               </p>
-              <div slot="footer">
-                <small>{{ post.date }}</small>
+              <div
+                v-if="typeof post.attributes.date != undefined"
+                slot="footer"
+              >
+                <small>{{ post.attributes.date }}</small>
               </div>
             </b-card>
           </b-card-group>
@@ -77,8 +79,6 @@
 </template>
 
 <script>
-let marked = require('marked')
-
 export default {
   name: 'Exhibit',
   props: {
@@ -96,17 +96,7 @@ export default {
   },
   computed: {
     parsedPostBody() {
-      marked.setOptions({
-        renderer: new marked.Renderer(),
-        gfm: true,
-        tables: true,
-        breaks: true,
-        pedantic: false,
-        sanitize: true,
-        smartLists: true,
-        smartypants: false
-      })
-      return marked(this.currentPost.body)
+      return this.currentPost.html
     }
   },
   watch: {
@@ -140,11 +130,8 @@ export default {
       )
     },
     changePost(slug) {
-      this.currentPost = this.getPost(slug)
-      this.$router.push({ name: this.prefix, params: { slug } })
-      this.selected = true
-      this.ready = true
-      window.scrollTo(0, 0)
+      // Update the URL path
+      this.$router.push(`${this.prefix}/${slug}`)
     },
     closePost() {
       if (this.lastSelectedPost !== null) {
