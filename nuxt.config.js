@@ -1,21 +1,12 @@
 const path = require('path')
-const glob = require('glob')
 
-var dynamicRoutes = getDynamicPaths({
-  '/posts': 'posts/*.md',
-  '/software': 'software/*.md',
-  '/blog': 'blog/*.md'
-})
-
-function getDynamicPaths(urlFilepathTable) {
-  return [].concat(
-    ...Object.keys(urlFilepathTable).map((url) => {
-      var filepathGlob = urlFilepathTable[url]
-      return glob
-        .sync(filepathGlob, { cwd: 'posts' })
-        .map((filepath) => `${url}/${path.basename(filepath, '.md')}`)
-    })
-  )
+let dynamicRoutes = () => {
+  return new Promise(resolve => {
+    return resolve([
+      '/software/article-optimizer',
+      '/software/catfacts'
+    ])
+  })
 }
 
 export default {
