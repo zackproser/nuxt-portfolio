@@ -2,7 +2,9 @@ const path = require('path')
 const glob = require('glob')
 
 var dynamicRoutes = getDynamicPaths({
-  '/posts': 'posts/*.md'
+  '/posts': 'posts/*.md',
+  '/software': 'software/*.md',
+  '/blog': 'blog/*.md'
 })
 
 function getDynamicPaths(urlFilepathTable) {
