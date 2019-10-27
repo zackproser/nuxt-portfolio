@@ -1,6 +1,6 @@
 ---
-category: software
 title: CatFacts in Node.js
+category: software
 description: PICK UP THE PHONE - ITS CATFACTS!
 image: catfacts-screens/catfacts-blog.png
 ---

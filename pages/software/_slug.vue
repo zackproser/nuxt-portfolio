@@ -35,7 +35,7 @@
                 xl="10"
                 class="post-view__content"
                 v-html="post.html"
-              ></div>
+              />
             </div>
           </div>
         </b-col>
@@ -48,9 +48,15 @@
 import NavLinks from '~/components/Nav.vue'
 
 export default {
-  name: 'PostView',
+  name: 'SoftwareView',
   components: {
     NavLinks
+  },
+  data() {
+    return {
+      ready: true,
+      selected: true
+    }
   },
   async asyncData({ params }) {
     try {
@@ -60,12 +66,6 @@ export default {
       }
     } catch (err) {
       return false
-    }
-  },
-  data() {
-    return {
-      ready: true,
-      selected: true
     }
   }
 }

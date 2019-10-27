@@ -1,3 +1,10 @@
+---
+title: Hosting many apps on a few bare DigitalOcean droplets
+category: blog
+description: How I once ran 7+ apps serving hundreds of thousands of requests per month for $35 in hosting infrastructure
+image: wikka.png
+---
+
 _Disclaimer: I now work at Cloudflare._
 
 If you maintain several sites or apps of various stacks across hosting providers, making updates to individual projects can become tedious, and your hosting fees can quickly mount beyond what you were originally comfortable paying.

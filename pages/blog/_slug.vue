@@ -35,7 +35,7 @@
                 xl="10"
                 class="post-view__content"
                 v-html="post.html"
-              ></div>
+              />
             </div>
           </div>
         </b-col>
@@ -48,24 +48,25 @@
 import NavLinks from '~/components/Nav.vue'
 
 export default {
-  name: 'PostView',
+  name: 'BlogView',
   components: {
     NavLinks
-  },
-  async asyncData({ params }) {
-    try {
-      let post = await import(`~/posts/${params.slug}.md`)
-      return {
-        post
-      }
-    } catch (err) {
-      return false
-    }
   },
   data() {
     return {
       ready: true,
       selected: true
+    }
+  },
+  async asyncData({ params }) {
+    try {
+      let post = await import(`~/blog/${params.slug}.md`)
+      console.dir(post)
+      return {
+        post
+      }
+    } catch (err) {
+      return false
     }
   }
 }

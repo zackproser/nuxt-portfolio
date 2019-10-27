@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-links></nav-links>
+    <nav-links />
     <b-container>
       <testimonial-flat
         v-for="testimonial in testimonials"
@@ -9,8 +9,7 @@
         :title="testimonial.title"
         :quote="testimonial.quote"
         :image="testimonial.image"
-      >
-      </testimonial-flat>
+      />
     </b-container>
   </div>
 </template>
@@ -22,7 +21,7 @@ import NavLinks from '~/components/Nav.vue'
 import TestimonialFlat from '~/components/TestimonialFlat'
 
 export default {
-  name: 'testimonials-gallery',
+  name: 'TestimonialsGallery',
   components: {
     NavLinks,
     TestimonialFlat

@@ -41,7 +41,7 @@
               xl="10"
               class="post-view__content"
               v-html="parsedPostBody"
-            ></div>
+            />
           </div>
         </div>
         <div

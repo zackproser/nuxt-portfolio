@@ -1,6 +1,6 @@
 ---
-category: software
 title: Speakeasy Golang client for Twilio
+category: software
 description: Sends SMS messages and makes phone calls
 image: speakeasy-blog.png
 ---

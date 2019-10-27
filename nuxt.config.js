@@ -1,14 +1,22 @@
 const glob = require('glob')
 const path = require('path')
 
-let dynamicRoutes = () => {
-  return glob.sync('*.md', { cwd: 'posts' })
-  .map(filepath => `/software/${path.basename(filepath, '.md')}`)
+var getDynamicRoutes = function() {
+  return [].concat(
+    glob
+      .sync('*.md', { cwd: 'posts/' })
+      .map((filepath) => `/software/${path.basename(filepath, '.md')}`),
+    glob
+      .sync('*.md', { cwd: 'blog/' })
+      .map((filepath) => `/blog/${path.basename(filepath, '.md')}`)
+  )
 }
+
+var dynamicPaths = getDynamicRoutes()
 
 export default {
   generate: {
-    routes: dynamicRoutes
+    routes: dynamicPaths
   },
 
   mode: 'spa',
@@ -72,7 +80,7 @@ export default {
     extend(config, ctx) {
       config.module.rules.push({
         test: /\.md$/,
-        include: path.resolve(__dirname, 'posts'),
+        include: [path.resolve(__dirname, 'posts'), path.resolve(__dirname, 'blog')],
         loader: 'frontmatter-markdown-loader'
       })
     }

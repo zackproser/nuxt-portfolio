@@ -1,3 +1,9 @@
+---
+title: Wisdomseeker
+category: software
+description: A wikipedia crawling application
+image: wisdomseeker-blog.png
+---
 ![](/blog/wisdomseeker-screens/wisdomseeker-home.png)
 
 Wikipedia is known to be structured in such a way that [many articles ultimately lead to Philosophy](http://www.xefer.com/2011/05/wikipedia) - if you click the first main body link of each article in succession.

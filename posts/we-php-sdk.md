@@ -1,3 +1,9 @@
+---
+title: Wealthengine PHP SDK
+category: software
+description: I wrote Wealthengine's first PHP SDK
+image: wikka.png
+---
 [WealthEngine's API](http://dev.wealthengine.com) allows you to look up anyone's wealth in realtime.
 
 [Get the code](https://github.com/zackproser/WealthEngine-PHP-SDK)

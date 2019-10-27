@@ -1,3 +1,10 @@
+---
+title: I open sourced my HTML5 game CanyonRunner
+category: blog
+description: I open sourced my complete HTML5 game as a resource for other developers working with Phaser.js or wanting to build a game
+image: canyonrunner-blog.png
+---
+
 [![zack-proser-canyonrunner](~~~/blog/canyonrunner-screens/CanyonRunner-Title-Screen.png)](https://objective-newton-10ea2c.netlify.com/)
 
 ## I Open Sourced My Game

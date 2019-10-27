@@ -1,4 +1,10 @@
-[![Hashtag Blaster Wordpress Plugin](/blog/hashtag-blaster-screens/official-wordpress-plugin.png)](https://wordpress.org/plugins/twitter-hashtag-blaster/)
+---
+title: Hashtag Blaster Wordpress plugin
+category: software
+description: An official WordPress plugin that helps readers share your content on Twitter for higher engagement
+image: hashtag-blaster-blog.png
+---
+[![Hashtag Blaster Wordpress Plugin](/hashtag-blaster-screens/official-wordpress-plugin.png)](https://wordpress.org/plugins/twitter-hashtag-blaster/)
 
 Being a longtime WordPress user myself, it was a great thrill to create a plugin that was constructed well enough to be included in the official WordPress Plugin repository.
 
@@ -10,23 +16,23 @@ This plugin amplifies blog content via Twitter with zero effort on the part of t
 
 **_Quickly installs from within your WordPress blog_**
 
-![Official WordPress Plugin Twitter Hashtag Blaster](/blog/hashtag-blaster-screens/official-wordpress-plugin.png)
+![Official WordPress Plugin Twitter Hashtag Blaster](/hashtag-blaster-screens/official-wordpress-plugin.png)
 
 **_Set any hashtag you wish - here we set "SEO"_**
 
-![Twitter Hashtag Blaster Settings Page](/blog/hashtag-blaster-screens/hashtag-blast-settings.png)
+![Twitter Hashtag Blaster Settings Page](/hashtag-blaster-screens/hashtag-blast-settings.png)
 
 **_Tweet Button now appears after every post_**
 
-![Twitter Hashtag Button Comes After Post Content](/blog/hashtag-blaster-screens/hashtag-blaster-button.png)
+![Twitter Hashtag Button Comes After Post Content](/hashtag-blaster-screens/hashtag-blaster-button.png)
 
 **_Preformatted Tweet includes Bitly shortlink back to your article_**
 
-![Twitter Hashtag Preformats Tweets For You](/blog/hashtag-blaster-screens/preformatted-tweet.png)
+![Twitter Hashtag Preformats Tweets For You](/hashtag-blaster-screens/preformatted-tweet.png)
 
 **_Free version includes a banner upselling premium version_**
 
-![In-App Upsell to Premium Plugin](/blog/hashtag-blaster-screens/twitter-hashtag-blaster-upsell.png)
+![In-App Upsell to Premium Plugin](/hashtag-blaster-screens/twitter-hashtag-blaster-upsell.png)
 
 ## Key Features
 
