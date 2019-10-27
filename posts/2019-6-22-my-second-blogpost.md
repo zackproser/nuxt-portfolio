@@ -1,6 +1,6 @@
 ---
-category: blog
-title: Test Post One
+category: software
+title: Test Post Two
 ---
 
 # Test heading
