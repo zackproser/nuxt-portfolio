@@ -34,7 +34,7 @@ Forge also knows how to connect to your git repository, and you can specify whic
 
 Laravel forge is $15 per month, but for that subscription fee you get unlimited deployments, and you can even configure your apps for git push deployments using a feature called Quick Deployment. If you enable Quick Deployment, Forge will listen for your repo’s git commit hooks, meaning that all you need to do is push to your master branch and Forge will take care of deploying your latest code to your server automatically.
 
-![laravel-forge-enable-quick-deployment](~/blog/do-laravel-cloudflare-screens/enable-quick-deployment.png)
+![laravel-forge-enable-quick-deployment](/do-laravel-cloudflare-screens/enable-quick-deployment.png)
 
 Forge is a great solution if you don’t want to lose any time to provisioning and configuring servers (doing installs, adding ssh keys, etc) but instead want to focus on building apps.
 
@@ -58,7 +58,7 @@ $ cat ~/.ssh/laravel-forge.pub | pbcopy
 ```
 Now navigate to My Account (The drop down menu at top right in the Forge UI) -> SSH Keys and you can save your key to your account:
 
-![Laravel forge add ssh key](~/blog/do-laravel-cloudflare-screens/add-key.png)
+![Laravel forge add ssh key](/do-laravel-cloudflare-screens/add-key.png)
 
 ## Create your first droplet
 
@@ -66,7 +66,7 @@ Laravel Forge integrates with DigitalOcean out of the box, and uses DigitalOcean
 
 The $10/mo droplet is beefy enough to host a handful of smaller apps or websites and it has the following specs:
 
-![DigitalOcean select droplet](~/blog/do-laravel-cloudflare-screens/create-droplet.png)
+![DigitalOcean select droplet](/do-laravel-cloudflare-screens/create-droplet.png)
 
 *   1GB of memory
 *   1 core processor
@@ -100,11 +100,11 @@ Now that we have our droplet provisioned and tested and saved as a host in our s
 
 For the purposes of this tutorial, I’ll use my portfolio site which is a node.js application written with the Express framework. We can leave the Project Type set to General PHP / Laravel:
 
-![Laravel forge cloudflare](~/blog/do-laravel-cloudflare-screens/create-site.png)
+![Laravel forge cloudflare](/do-laravel-cloudflare-screens/create-site.png)
 
 Meanwhile, we’ll provide Forge with the fully qualified URL to our git repository so that it can pull down our latest source code during a deployment:
 
-![Laravel forge add repo](~/blog/do-laravel-cloudflare-screens/add-repository.png)
+![Laravel forge add repo](/do-laravel-cloudflare-screens/add-repository.png)
 
 ## Use PM2 to manage your node.js app
 
@@ -160,7 +160,7 @@ In this example, we pull the latest code from our project’s master branch, ins
 ```bash
 $ pm2 status
 ```
-![PM2 status](~/blog/do-laravel-cloudflare-screens/pm2-status.png)
+![PM2 status](/do-laravel-cloudflare-screens/pm2-status.png)
 
 ## Proxy requests to your node.js backend
 
@@ -205,7 +205,7 @@ All you need in order to make this happen is a registered domain name that you c
 
 In the Site Details menu on the left hand sidebar, click SSL. Next, click LetsEncrypt. This next part is important. Before you click Obtain Certificate, ensure that you provide both your domain name without www, followed by a comma, followed by your domain name with www, as shown in this screenshot:
 
-![LetsEncrypt certificate](~/blog/do-laravel-cloudflare-screens/obtain-certificate.png)
+![LetsEncrypt certificate](/do-laravel-cloudflare-screens/obtain-certificate.png)
 
 When you click Obtain Certificate, Forge will take your domains string and post it back to a service that calls Let’s Encrypt’s API. You need to tell Let’s Encrypt which domains the resulting certificate should be valid for. You should request both versions of your domain (www. and naked) - otherwise some of your users may see certificate errors, security warnings, or be unable to access your site at all.
 
@@ -225,7 +225,7 @@ Google built [a tool](https://developers.google.com/speed/pagespeed/insights/) f
 
 Let's take a look at how our site is measuring up now that we have our app deployed and securely delivered over SSL by going to Google's pagespeed tool and submitting the URL to our site:
 
-![Google PageSpeed tool](~/blog/do-laravel-cloudflare-screens/unminified-fails.png)
+![Google PageSpeed tool](/do-laravel-cloudflare-screens/unminified-fails.png)
 
 Not bad, but we can also use Cloudflare’s free plan for a big performance boost.
 
@@ -259,7 +259,7 @@ The benefit of full SSL is that the connection from our web server (our droplet)
 
 Now that our site is stood up, securely delivering content over SSL and protected and accelerated by Cloudflare, let’s see how we’re doing in terms of overall site health, load time, page weight - all of which will factor into how well our site will perform in search results:
 
-![Google PageSpeed improvements](~/blog/do-laravel-cloudflare-screens/insight-improvements.png)
+![Google PageSpeed improvements](/do-laravel-cloudflare-screens/insight-improvements.png)
 
 We can see that Cloudflare has already given us a lot of the caching and minification best practices for free.
 
