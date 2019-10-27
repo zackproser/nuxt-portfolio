@@ -5,7 +5,7 @@ description: I open sourced my complete HTML5 game as a resource for other devel
 image: canyonrunner-blog.png
 ---
 
-[![zack-proser-canyonrunner](~~~/blog/canyonrunner-screens/CanyonRunner-Title-Screen.png)](https://objective-newton-10ea2c.netlify.com/)
+[![zack-proser-canyonrunner](/canyonrunner-screens/CanyonRunner-Title-Screen.png)](https://objective-newton-10ea2c.netlify.com/)
 
 ## I Open Sourced My Game
 
@@ -36,23 +36,23 @@ Here's a look at some screenshots from the actual game. I wanted the game to hav
 
 **_Intense Environmental Effects_**
 
-![CanyonRunner Environmental Effects](~~/blog/canyonrunner-screens/CanyonRunner-Environmental-Effects.png)
+![CanyonRunner Environmental Effects](/canyonrunner-screens/CanyonRunner-Environmental-Effects.png)
 
 **_Auto-detects Mobile agents and renders a touchpad_**
 
-![CanyonRunner Chapter Screen](~~/blog/canyonrunner-screens/CanyonRunner-Mobile-Touchpad.png)
+![CanyonRunner Chapter Screen](/canyonrunner-screens/CanyonRunner-Mobile-Touchpad.png)
 
 **_Catchy Music Keeps The Pace Throughout The Game_**
 
-![CanyonRunner Musical Score](~~/blog/canyonrunner-screens/CanyonRunner-Success.png)
+![CanyonRunner Musical Score](/canyonrunner-screens/CanyonRunner-Success.png)
 
 **_Save System Keeps Your Score & Progress_**
 
-![CanyonRunner Save System](~~/blog/canyonrunner-screens/CanyonRunner-Title-Screen.png)
+![CanyonRunner Save System](/canyonrunner-screens/CanyonRunner-Title-Screen.png)
 
 **_Multiple Endings For Higher Replay Value_**
 
-![CanyonRunner Game Two Different Endings](~~/blog/canyonrunner-screens/CanyonRunner-Two-Different-Endings.png)
+![CanyonRunner Game Two Different Endings](/canyonrunner-screens/CanyonRunner-Two-Different-Endings.png)
 
 ## Playthrough Video
 
