@@ -4,7 +4,7 @@ category: software
 description: A wikipedia crawling application
 image: wisdomseeker-blog.png
 ---
-![](/blog/wisdomseeker-screens/wisdomseeker-home.png)
+![](/wisdomseeker-screens/wisdomseeker-home.png)
 
 Wikipedia is known to be structured in such a way that [many articles ultimately lead to Philosophy](http://www.xefer.com/2011/05/wikipedia) - if you click the first main body link of each article in succession.
 
@@ -18,9 +18,9 @@ It also knows when it is stuck in a loop - and will report loops as well as mean
 
 **_Easy one-step form accepts any Wikipedia link_**
 
-![Wisdom Seeker Node App Succeeds in finding Philosophy Article](/blog/wisdomseeker-screens/wisdomseeker-success.png)
+![Wisdom Seeker Node App Succeeds in finding Philosophy Article](/wisdomseeker-screens/wisdomseeker-success.png)
 
-![Wisdom Seeker Node App Gets Stuck in a Loop - And Reports it!](/blog/wisdomseeker-screens/wisdomseeker-loop.png)
+![Wisdom Seeker Node App Gets Stuck in a Loop - And Reports it!](/wisdomseeker-screens/wisdomseeker-loop.png)
 
 ## Key Features
 
